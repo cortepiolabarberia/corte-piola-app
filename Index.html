@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Reservá tu próximo corte en Corte Piola Barbería, Ituzaingó.">
+  <title>Corte Piola Barbería</title>
+  <style>
+    :root {
+      --negro: #080808;
+      --panel: #151515;
+      --azul: #087bff;
+      --dorado: #f5c542;
+      --blanco: #ffffff;
+      --gris: #b8b8b8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--negro);
+      color: var(--blanco);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      padding: 25px 20px;
+      border-bottom: 1px solid #292929;
+      text-align: center;
+    }
+
+    .marca {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .marca span {
+      color: var(--azul);
+    }
+
+    .subtitulo {
+      margin-top: 8px;
+      color: var(--dorado);
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+
+    .hero {
+      padding: 55px 20px 45px;
+      text-align: center;
+      background: radial-gradient(ellipse at top, #102747, #080808 70%);
+    }
+
+    .etiqueta {
+      color: var(--dorado);
+      font-size: 12px;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 20px 0;
+      font-size: clamp(36px, 10vw, 58px);
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    h1 span {
+      color: var(--azul);
+    }
+
+    .hero p {
+      color: var(--gris);
+      line-height: 1.6;
+      max-width: 400px;
+      margin: 0 auto 25px;
+    }
+
+    button, .boton {
+      display: inline-block;
+      width: 100%;
+      max-width: 360px;
+      padding: 16px;
+      border: none;
+      border-radius: 8px;
+      background: var(--dorado);
+      color: #080808;
+      font-size: 15px;
+      font-weight: 900;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 35px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h2 span {
+      color: var(--azul);
+    }
+
+    .servicio {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 15px;
+      margin: 12px 0;
+      background: var(--panel);
+      border: 1px solid #292929;
+      border-left: 3px solid var(--azul);
+      border-radius: 8px;
+    }
+
+    .servicio h3 {
+      margin: 0 0 7px;
+      font-size: 16px;
+    }
+
+    .servicio p {
+      margin: 0;
+      color: var(--gris);
+      font-size: 13px;
+    }
+
+    .precio {
+      color: var(--dorado);
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .horario, .ubicacion {
+      padding: 20px;
+      margin-top: 15px;
+      background: var(--panel);
+      border-radius: 10px;
+      line-height: 1.9;
+      color: var(--gris);
+    }
+
+    .horario strong, .ubicacion strong {
+      color: var(--blanco);
+    }
+
+    .ubicacion p {
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 25px 15px;
+      text-align: center;
+      color: var(--gris);
+      border-top: 1px solid #292929;
+      font-size: 12px;
+    }
+
+    .nota {
+      color: var(--gris);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="marca">CORTE <span>PIOLA</span></div>
+    <div class="subtitulo">BARBERÍA</div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="etiqueta">ESTILO · PRECISIÓN · ACTITUD</div>
+      <h1>TU PRÓXIMO<br>CORTE <span>EMPIEZA ACÁ.</span></h1>
+      <p>Elegí tu servicio y preparate para renovar tu estilo.</p>
+      <a class="boton" href="#servicios">VER SERVICIOS Y PRECIOS</a>
+    </div>
+
+    <section id="servicios">
+      <h2>NUESTROS <span>SERVICIOS</span></h2>
+
+      <div class="servicio">
+        <div><h3>Corte</h3><p>Duración: 40 minutos</p></div>
+        <div class="precio">$14.000</div>
+      </div>
+
+      <div class="servicio">
+        <div><h3>Corte + barba</h3><p>Duración: 40 minutos</p></div>
+        <div class="precio">$17.000</div>
+      </div>
+
+      <div class="servicio">
+        <div><h3>Barba</h3><p>Duración: 30 minutos</p></div>
+        <div class="precio">$10.000</div>
+      </div>
+
+      <div class="servicio">
+        <div><h3>Corte Express</h3><p>Solo máquina, un número · 20 minutos</p></div>
+        <div class="precio">$8.000</div>
+      </div>
+
+      <div class="servicio">
+        <div><h3>Delineado de contornos</h3><p>Duración: 20 minutos</p></div>
+        <div class="precio">$8.000</div>
+      </div>
+
+      <p class="nota">Precios expresados en pesos argentinos.</p>
+    </section>
+
+    <section id="horarios">
+      <h2>HORARIOS DE <span>ATENCIÓN</span></h2>
+      <div class="horario">
+        <strong>Lunes:</strong> 16:00 a 20:00<br>
+        <strong>Martes:</strong> 10:00 a 13:00 y 16:00 a 20:00<br>
+        <strong>Miércoles:</strong> 10:00 a 13:00 y 16:00 a 20:00<br>
+        <strong>Jueves:</strong> 10:00 a 13:00 y 16:00 a 20:00<br>
+        <strong>Viernes:</strong> 10:00 a 20:00<br>
+        <strong>Sábado:</strong> 10:00 a 20:00<br>
+        <strong>Domingo:</strong> Cerrado
+      </div>
+    </section>
+
+    <section id="ubicacion">
+      <h2>¿DÓNDE <span>ESTAMOS?</span></h2>
+      <div class="ubicacion">
+        <strong>CORTE PIOLA BARBERÍA</strong>
+        <p>Cnel. Pringles 1908<br>
+        B1714 Ituzaingó, Provincia de Buenos Aires</p>
+        <a class="boton"
+           href="https://www.google.com/maps/search/?api=1&query=Cnel.+Pringles+1908%2C+Ituzaing%C3%B3%2C+Buenos+Aires"
+           target="_blank" rel="noopener">
+          CÓMO LLEGAR
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>RESERVÁ TU <span>TURNO</span></h2>
+      <p class="nota">
+        Estamos preparando el sistema de reservas en línea.
+        Próximamente vas a poder elegir tu servicio y horario desde esta página.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    CORTE PIOLA BARBERÍA · ITUZAINGÓ<br>
+    TU ESTILO, TU IDENTIDAD.
+  </footer>
+
+</body>
+  </html>
